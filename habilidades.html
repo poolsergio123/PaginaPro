@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>:V</title>
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav class="nav">
-          <div class="logo">Sherlock Holmes</div>
-      
-          <div class="hamburger" onclick="toggleMenu()">☰</div>
-      
-          <div class="menu" id="menu">
-            <a href="reseña.html">Reseña</a>
-            <a href="habilidades.html">Habilidades</a>
-            <a href="datoscuriosos.html">Datos Curiosos</a>
-          </div>
-        </nav>
-    </header>
+{% include header.html %}
     <main class="main" id="inicio">
 
       <section class="hero">
@@ -60,10 +39,5 @@
   
     </main>
 
-    <!-- FOOTER -->
-    <footer class="footer" style="color: azure;">
-      <p class="footer__text">© 2026 — Proyecto Sherlock Holmes</p>
-    </footer>
-    <script src="/index.js"></script>
-</body>
-</html>
+
+{% include footer.html %}
